@@ -38,6 +38,9 @@ const resultHandler=()=>{
 
 innerCircle.addEventListener("transitionend",()=>{
     prizeSpan.textContent=` ${prize}`
+    if(prize=undefined){
+        prizeSpan.textContent="Lost"
+    }
     prizeSpan.style.color="red"
     resultHandler()
 })
