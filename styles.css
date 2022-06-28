@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #eaeaea;
+  overflow: hidden;
+}
+
+.backdrop {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  pointer-events: none;
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  height: 20vh;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+
+.outer_circle {
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px, rgba(0, 0, 0, 0.05) 0px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px, rgba(0, 0, 0, 0.05) 0px 3px 0px;
+}
+
+.inner_circle {
+  height: 100%;
+  width: 100%;
+  border: 10px solid black;
+  position: relative;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all ease-in-out 5s;
+  transition: all ease-in-out 5s;
+}
+
+span {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.triangle1 {
+  -webkit-clip-path: polygon(0 92%, 100% 50%, 0 8%);
+          clip-path: polygon(0 92%, 100% 50%, 0 8%);
+  background-color: red;
+  top: 120px;
+}
+
+.triangle2 {
+  -webkit-clip-path: polygon(100% 100%, 0% 50%, 100% 8%);
+          clip-path: polygon(100% 100%, 0% 50%, 100% 8%);
+  background-color: pink;
+  right: 0px;
+  top: 120px;
+}
+
+.triangle3 {
+  -webkit-clip-path: polygon(50% 0, 8% 100%, 92% 100%);
+          clip-path: polygon(50% 0, 8% 100%, 92% 100%);
+  background-color: orange;
+  bottom: 0px;
+  left: 120px;
+}
+
+.triangle4 {
+  -webkit-clip-path: polygon(50% 100%, 92% 0, 8% 0);
+          clip-path: polygon(50% 100%, 92% 0, 8% 0);
+  background-color: blue;
+  left: 120px;
+  top: 0px;
+}
+
+.box-b {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+#brown {
+  background-color: brown;
+}
+
+#teal {
+  background-color: teal;
+}
+
+#torquise {
+  background-color: turquoise;
+}
+
+#grey {
+  background-color: gray;
+}
+
+.spinbtn {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spin {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.pointer {
+  display: absolute;
+  z-index: 10;
+  margin-top: -3rem;
+}
+
+img {
+  height: 3rem;
+  width: 3rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: black;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+#red-text {
+  text-align: center;
+  margin-top: 6rem;
+  margin-right: 4rem;
+}
+
+#pink-text {
+  margin-top: 6rem;
+  margin-left: 6rem;
+}
+
+#blue-text {
+  font-size: 1.5rem;
+  width: 100%;
+  margin-top: 7rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#gold-text {
+  margin: 5.5rem;
+  margin-top: 8rem;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#teal-text {
+  margin: 7rem;
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#brown-text {
+  margin: 3rem;
+  margin-top: 6rem;
+  margin-right: 6rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#torquise-text {
+  width: 90%;
+  font-size: 1.8rem;
+  margin: 0.7rem;
+  position: absolute;
+  margin-top: 4rem;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#grey-text {
+  width: 100%;
+  margin-top: 5rem;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+#prize {
+  font-size: 1rem;
+}
+
+@media (max-width: 476px) {
+  .modal {
+    width: 90%;
+  }
+  body {
+    overflow-x: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
